@@ -1,58 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".registro_usuarios_nuevos">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
     <EditText
         android:id="@+id/registroEmailUser"
-        android:layout_width="wrap_content"
+        android:layout_width="2.1in"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
-        android:ems="10"
         android:hint="@string/labelEmail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/registroPassUser"
-        android:layout_width="wrap_content"
+        android:layout_width="2.1in"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:ems="10"
         android:hint="@string/labelContraseña"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registroEmailUser" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnRegistroNew"
         android:backgroundTint="#0B0A0A"
         android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="50pt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Registro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registroPassUser"
-        app:layout_constraintVertical_bias="0.249" />
+        android:text="@string/Registro" />
 
     <Button
         android:id="@+id/InicioSesionUser"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70px"
         android:layout_height="wrap_content"
-        android:backgroundTint="#0B0A0A"
-        android:textColor="#FFFFFF"
-        android:text="@string/sesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistroNew" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:backgroundTint="#FFFCFC"
+        android:textColor="#020202"
+        android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+        android:textSize="15dp"
+        android:shadowRadius="20px"
+        android:text="@string/sesion" />
+    </LinearLayout>
+</ScrollView>
