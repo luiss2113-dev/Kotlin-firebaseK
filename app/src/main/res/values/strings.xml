@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="true">My Splas Screen</string>
+    <string name="bienvenido" translatable="true">BIENVENIDO A TU AUTH</string>
+    <string name="Registro" translatable="true">REGISTRARSE</string>
+    <string name="sesion" translatable="true">INICIAR SESIÓN</string>
+    <string name="labelContraseña" translatable="true">Contraseña</string>
+    <string name="labelEmail" translatable="true">Email</string>
+    <string name="usuarioField">Bienvenido</string>
+    <string name="singOut">Cerrar Sesión</string>
+    <string name="facebook_app_id">691515401617821</string>
+    <string name="fb_login_protocol_scheme">fb691515401617821</string>
+</resources>

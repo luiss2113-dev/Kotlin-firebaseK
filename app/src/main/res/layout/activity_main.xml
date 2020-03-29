@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textCentrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenido"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:layout_marginTop="22mm"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            />
+
+        <EditText
+            android:id="@+id/emailUser"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/labelEmail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passUser"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:hint="@string/labelContraseña"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3mm">
+
+            <Button
+                android:id="@+id/btnIniciarSesion"
+                android:layout_width="1in"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0B0A0A"
+                android:layout_gravity="center"
+                android:text="@string/sesion"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#0C0C0C" />
+
+            <Button
+                android:id="@+id/btnRegistroLayout"
+                android:layout_width="1in"
+                android:layout_height="wrap_content"
+                android:text="@string/Registro"
+                android:backgroundTint="#0B0A0A"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <ImageButton
+                android:id="@+id/btnGoogleAuth"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#FBF5F5"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/googleg_standard_color_18"/>
+
+            <ImageButton
+                android:id="@+id/btnFacebookAuth"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="#000000"
+                android:src="@drawable/com_facebook_button_icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
